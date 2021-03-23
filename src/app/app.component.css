@@ -1,0 +1,29 @@
+button {
+    width: 240px;
+    height: 80px;
+    padding: 10px;
+    margin: 100px 100px 0px 100px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+app-user-registration {
+    display: flex;
+    justify-content: center;
+}
+
+app-login {
+    display: flex;
+    justify-content: center;
+}
+
+[hidden] {
+    display:none;
+}
+
+app-footer {
+    bottom: 0px;
+}

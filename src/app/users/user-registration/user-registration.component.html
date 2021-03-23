@@ -1,0 +1,59 @@
+<mat-form-field appearance="outline" id="user-registration-form">
+    <table>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <label>User Registration Form</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Name:</label>
+        </td>
+        <td>
+          <mat-form-field appearance="outline">
+            <input matInput type="text" name="name" required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Email:</label>
+        </td>
+        <td>
+          <mat-form-field appearance="outline">
+            <input matInput type="email" name="email" required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Aadhar ID:</label>
+        </td>
+        <td>
+          <mat-form-field appearance="outline">
+            <input matInput type="number" name="uid" size="12" required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Password:</label>
+        </td>
+        <td>
+          <mat-form-field appearance="outline">
+            <input matInput type="password" name="password" required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr style="text-align: center;">
+          <td colspan="2">
+            <button mat-raised-button>Submit</button>
+          </td>
+      </tr>
+      <tr style="text-align: center;">
+        <td colspan="2">
+          <button mat-raised-button>Close</button>
+        </td>
+    </tr>
+    </table>
+  </mat-form-field>

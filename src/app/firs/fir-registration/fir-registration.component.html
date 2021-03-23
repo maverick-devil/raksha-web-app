@@ -1,0 +1,151 @@
+<mat-form-field appearance="outline" id="fir-registration-form">
+  <table>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+        <label>FIR Registration Form</label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Name:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <input matInput type="text" name="name" required>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Contact:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <input matInput type="number" name="contact" pattern="^[789][0-9]{9}" required>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Present Address:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <input matInput type="text" name="address" required>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Place of Occurence:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <input matInput type="text" name="occurence_place" required>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Date of Occurence:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <input matInput type="date" name="occurence_date" required>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Time of Occurence:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <input matInput type="time" name="occurence_time" required>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Train Number:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <input matInput type="number" name="train_number" required>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Train Name:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <input matInput type="text" name="train_name" required minlength="5">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Bogie Number:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <input matInput type="text" name="bogie_number" required>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Travelling Class:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <mat-select required>
+            <option>SELECT</option>
+            <option value="1AC">1AC</option>
+            <option value="2AC">2AC</option>
+            <option value="3AC">3AC</option>
+            <option value="SLR">SLEEPER</option>
+            <option value="2S">2ND SEATING</option>
+            <option value="GEN">GENERAL</option>
+          </mat-select>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>PNR:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <input matInput type="number" name="pnr required">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Name of Stations between <br/> which incident took place:</label>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <mat-select required></mat-select>
+        </mat-form-field>
+        -and-
+        <mat-form-field appearance="outline">
+          <mat-select required></mat-select>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr style="text-align: center;">
+        <td colspan="2">
+          <button mat-raised-button>Submit</button>
+        </td>
+    </tr>
+    <tr style="text-align: center;">
+      <td colspan="2">
+        <button mat-raised-button >Close</button>
+      </td>
+  </tr>
+  </table>
+</mat-form-field>

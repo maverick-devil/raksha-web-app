@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'raksha-web-app';
+  title: String = 'Raksha';
+  showLogin: boolean = false;
+  showRegistration: boolean = false;
+  hideRegistration() {
+    this.showRegistration = false;
+  }
+  hideLogin() {
+    this.showLogin = false;
+  }
 }

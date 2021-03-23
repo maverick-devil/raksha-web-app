@@ -1,0 +1,39 @@
+<mat-form-field appearance="outline" id="login-form" [hidden]="showLogin">
+    <table>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <label>Login</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>User ID:</label>
+        </td>
+        <td>
+          <mat-form-field appearance="outline">
+            <input matInput type="text" name="name" required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Password:</label>
+        </td>
+        <td>
+          <mat-form-field appearance="outline">
+            <input matInput type="password" name="contact" pattern="^[789][0-9]{9}" required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr style="text-align: center;">
+        <td colspan="2">
+          <button mat-raised-button>Submit</button>
+        </td>
+    </tr>
+    <tr style="text-align: center;">
+      <td colspan="2">
+        <button mat-raised-button (click)="hideLogin()">Close</button>
+      </td>
+  </tr>
+    </table>
+</mat-form-field>
