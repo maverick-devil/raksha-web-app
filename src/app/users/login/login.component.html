@@ -1,4 +1,4 @@
-<mat-form-field appearance="outline" id="login-form" [hidden]="showLogin">
+<mat-form-field appearance="outline" id="login-form">
     <table>
       <tr>
         <td colspan="2" style="text-align: center;">
@@ -11,7 +11,7 @@
         </td>
         <td>
           <mat-form-field appearance="outline">
-            <input matInput type="text" name="name" required>
+            <input matInput type="text" #userId required>
           </mat-form-field>
         </td>
       </tr>
@@ -21,18 +21,18 @@
         </td>
         <td>
           <mat-form-field appearance="outline">
-            <input matInput type="password" name="contact" pattern="^[789][0-9]{9}" required>
+            <input matInput type="password" #userPassword required>
           </mat-form-field>
         </td>
       </tr>
       <tr style="text-align: center;">
         <td colspan="2">
-          <button mat-raised-button>Submit</button>
+          <button mat-raised-button (click)="login(userId.value, userPassword.value)">Submit</button>
         </td>
     </tr>
     <tr style="text-align: center;">
       <td colspan="2">
-        <button mat-raised-button (click)="hideLogin()">Close</button>
+        <button mat-raised-button (click)="hide()">Close</button>
       </td>
   </tr>
     </table>

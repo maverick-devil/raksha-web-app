@@ -3,6 +3,6 @@
     <button mat-raised-button (click)="showLogin = true;">Login</button>
     <button mat-raised-button (click)="showRegistration = true;">Register</button>
 </body>
-<app-user-registration [hidden]="!showRegistration" [showRegistration]="showRegistration" (hideRegistration)="hideRegistration()"></app-user-registration>
-<app-login [hidden]="!showLogin" [showLogin]="showLogin" (hideLogin)="hideLogin()"></app-login>
+<app-user-registration *ngIf="showRegistration" (hideRegistration)="hideRegistration($event)"></app-user-registration>
+<app-login *ngIf="showLogin" (hideLogin)="hideLogin($event)"></app-login>
 <app-footer></app-footer>

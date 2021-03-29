@@ -7,15 +7,19 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  @Input() showLogin: boolean;
-  @Output() hideLoginEvent = new EventEmitter<boolean>();
+  @Output() hideLogin: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  hideLogin() {
-    this.hideLoginEvent.emit(false);
+  login(userId, userPassword): void {
+    console.log(userId, userPassword);
+    // Implement login service and use it here
+  }
+
+  hide() {
+    this.hideLogin.emit(false);
   }
 }

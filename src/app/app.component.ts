@@ -9,10 +9,12 @@ export class AppComponent {
   title: String = 'Raksha';
   showLogin: boolean = false;
   showRegistration: boolean = false;
-  hideRegistration() {
-    this.showRegistration = false;
+
+  hideRegistration(bool: boolean) {
+    this.showRegistration = bool;
   }
-  hideLogin() {
-    this.showLogin = false;
+
+  hideLogin(bool: boolean) {
+    this.showLogin = bool;
   }
 }
